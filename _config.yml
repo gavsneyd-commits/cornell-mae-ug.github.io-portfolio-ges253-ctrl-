@@ -1,0 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+
+# Site Settings
+locale                   : "en-US"
+title                    : Gavin Sneyd
+title_separator          : "-"
+name                     : Gavin Sneyd
+description              : "Gavin Sneyd - Mechanical Engineering portfolio: projects and CV"
+baseurl                  : "/cornell-mae-ug.github.io-portfolio-ges253-ctrl-" # Set this to your repo name
+
+# Theme and Style
+theme: jekyll-theme-minimal
+color_scheme: dark # light/default, dark, or aqua
+
+sass:
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+
+collections:
+  pages:
+    output: true
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Files and folders Jekyll should ignore.
+# The _pages entries are old template pages that duplicated /cv/ and /projects/
+# (they caused the old template CV to show up); excluding them keeps the live
+# pages (cv.md, projects.md) as the only source for those URLs.
+exclude:
+  - _pages
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

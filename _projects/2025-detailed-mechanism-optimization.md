@@ -1,0 +1,16 @@
+---
+layout: project
+title: Detailed Mechanism Optimization
+description: Design a weight-lifting mechanism within a 150 cm × 50 cm design space by optimizing a rigid-bar and later flexible-beam configuration, selecting supports and an actuator to maximize lifting height and load while controlling beam deflection for efficient, feasible performance.
+technologies: []
+image: "/assets/images/HW3_4_8 onwards (10).jpg"
+published: true
+---
+
+To begin the project, I defined the physical constraints and objectives that shaped the design space. The system needed to fit within a 150 cm by 50 cm planar region and use a bar of fixed length, three pin supports—two grounded—and a catalog-selected linear actuator. The objective was to maximize both the height reached by the lifted weight and the magnitude of that load. The primary design degrees of freedom included the placement of the supports, the orientation and length of the bar, and the mounting geometry of the actuator. These parameters formed the basis for configuring a statically sound mechanism that transforms the actuator’s linear force into vertical motion.
+
+With the bar initially treated as perfectly rigid, I revisited my earlier HW5 portfolio work and carried out a static force and moment analysis to evaluate feasible configurations. By drawing free-body diagrams of the bar, I identified how the actuator force and weight load transmitted to the three pin supports, and I varied support locations to ensure static determinacy and avoid unfavorable reaction spikes. The actuator’s maximum force capacity constrained the allowable weight, while geometric considerations influenced the achievable lift height. Through iterations of these static analyses, I arrived at a final rigid-bar mechanism layout that balanced load capacity, stroke utilization, and support stability. I presented this rigid-body mechanism using a clear labeled drawing to communicate the final geometry.
+
+In the second phase of the process, I lifted the assumption of rigidity and re-modeled the bar as a bending beam subject to transverse forces from both the weight and the actuator. I clearly stated my assumptions—including small-deflection theory, pinned boundary conditions, and the locations of applied forces—and computed the maximum deflection using standard Euler–Bernoulli beam formulas. This analysis established that certain slender configurations would exceed the allowable 2% vertical deflection target. I then evaluated alternative material and cross-section choices to improve stiffness-to-mass performance. By comparing several shapes (rectangular, circular, hollow sections) and materials, I selected a beam design that minimized mass while maintaining deflection within the required limit. I finalized this portion of the work by producing a clear drawing of the chosen beam geometry.
+
+Together, these stages produced a complete mechanism concept—from rigid-body statics to elastic-beam verification—that satisfies the competition between maximizing load/height performance and keeping deformation within allowable limits.
